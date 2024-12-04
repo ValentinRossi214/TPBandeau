@@ -16,7 +16,16 @@ public class ExempleDUtilisation {
         Font font = monBandeau.getFont();
         Color back = monBandeau.getBackground();
         Color fore = monBandeau.getForeground();
+        JeuDuPendu jeu = new JeuDuPendu(1, 500);
+        Zoom zoom = new Zoom(1, 100);
 
+        monBandeau.setMessage("First try");
+        jeu.appliquerEffet(monBandeau);
+        monBandeau.sleep(1000);
+        monBandeau.setMessage("Zoomin time");
+        zoom.appliquerEffet(monBandeau);
+
+/*
         monBandeau.setMessage("Hello");
         monBandeau.sleep(1000);
         monBandeau.setMessage("On va changer de police");
@@ -35,7 +44,6 @@ public class ExempleDUtilisation {
             monBandeau.sleep(100);
         }
         monBandeau.sleep(1000);
-
         monBandeau.setFont(new Font("Courier new", Font.PLAIN, 15));
         monBandeau.setMessage("On va tourner");
         monBandeau.sleep(1000);
@@ -55,6 +63,7 @@ public class ExempleDUtilisation {
         monBandeau.setForeground(fore);
         monBandeau.setBackground(back);
         monBandeau.setMessage("Terminé");
+ */
         monBandeau.sleep(3000);
         monBandeau.close();
     }
